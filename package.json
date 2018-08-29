@@ -4,7 +4,7 @@
   "description": "Late binding state, memoized state for tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --colors test.js"
   },
   "author": "",
   "license": "MIT",
