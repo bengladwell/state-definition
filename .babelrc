@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "es2015",
+    "es2016",
+    "es2017",
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": "> 1%",
+          "uglify": true
+        },
+        "useBuiltIns": true
+      }
+    ]
+  ],
+  "plugins": [
+    "syntax-dynamic-import"
+  ],
+  "sourceMaps": true,
+  "env": {
+    "test": {
+      "plugins": ["dynamic-import-node"]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "no-underscore-dangle": 0
+  },
+  "overrides": [
+    {
+      "files": [
+        "test.js"
+      ],
+      "globals": {
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "jest": true,
+        "global": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "beforeAll": true,
+        "afterAll": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true,
+            "optionalDependencies": true,
+            "peerDependencies": true
+          }
+        ]
+      }
+    }
+  ]
+}
+
