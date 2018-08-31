@@ -25,7 +25,7 @@ describe('User permission to edit', () => {
 
   const subject = () => { s.post.edit(s.user) }
 
-  it('cannot edit another user's post', () => {
+  it("cannot edit another user's post", () => {
     expect(subject).toThrow();
   });
 
@@ -34,7 +34,7 @@ describe('User permission to edit', () => {
       s.define({ isGroupAdmin: true });
     });
 
-    it('can edit another user's post', () => {
+    it("can edit another user's post", () => {
       expect(subject).not.toThrow();
     });
   });
